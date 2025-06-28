@@ -96,3 +96,31 @@ a:hover {
     gap: 1rem;
     margin-top: 2rem;
 }
+
+.event-box {
+    background-color: #ffffffdd;
+    padding: 1.5rem 2rem;
+    margin: 2rem auto;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.event-box h2 {
+    color: #4a148c;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.event-box p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.map-container {
+    margin-top: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
