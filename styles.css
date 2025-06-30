@@ -42,6 +42,15 @@ h1 {
     margin-bottom: 2rem;
 }
 
+@media (max-width: 700px) {
+    h1 {
+    font-size: 2rem;
+    color: #5dff4e;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+}
+
 a {
     display: inline-block;
     margin: 1rem;
@@ -104,6 +113,14 @@ a[href*="discord.gg"]:hover {
     margin-bottom: 0.2rem;
 }
 
+@media (max-width: 700px) {
+    .team-info h2 {
+    font-size: 1.8rem;
+    color: #bd4bff;
+    margin-bottom: 0.2rem;
+    }
+}
+
 .team-info h3 {
     font-size: 1.2rem;
     color: #ddd;
@@ -130,6 +147,14 @@ a[href*="discord.gg"]:hover {
     color: #bd4bff;
     margin-bottom: 1rem;
     font-size: 1.8rem;
+}
+
+@media (max-width: 700px) {
+    .event-box h2 {
+        color: #bd4bff;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
 }
 
 .event-box p {
@@ -203,7 +228,7 @@ a[href*="discord.gg"]:hover {
 
 .about-info {
     flex: 1;
-    min-width: 280px;
+    /* min-width: 280px; */
     text-align: left;
 }
 
@@ -217,6 +242,34 @@ a[href*="discord.gg"]:hover {
     font-size: 1.1rem;
     color: #eee;
     line-height: 1.7;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 700px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 1rem;
+    }
+
+    .about-section img {
+        width: 220px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .about-info {
+        text-align: center;
+        padding: 0 0.5rem;
+    }
+
+    .about-info h2 {
+        font-size: 1.6rem;
+    }
+
+    .about-info p {
+        font-size: 1rem;
+    }
 }
 
 /* Responsive tweaks */
