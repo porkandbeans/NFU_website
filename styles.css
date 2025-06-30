@@ -32,11 +32,12 @@ body {
     padding: 2rem;
     line-height: 1.6;
     text-align: center;
+    padding-bottom: 100px; /* 👈 reserve space for the fixed bar */
 }
 
 h1 {
     font-size: 3rem;
-    color: #ff70a6;
+    color: #5dff4e;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -76,12 +77,13 @@ a[href*="discord.gg"]:hover {
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem auto; /* Changed from margin-bottom to margin for vertical and horizontal centering */
     background-color: #ffffff0f;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     text-align: left;
+    max-width: 700px;
 }
 
 .team-member img {
@@ -89,7 +91,7 @@ a[href*="discord.gg"]:hover {
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #ff70a6;
+    border: 3px solid #75ff70;
 }
 
 .team-info {
@@ -98,7 +100,7 @@ a[href*="discord.gg"]:hover {
 
 .team-info h2 {
     font-size: 1.8rem;
-    color: #ff70a6;
+    color: #bd4bff;
     margin-bottom: 0.2rem;
 }
 
@@ -125,7 +127,7 @@ a[href*="discord.gg"]:hover {
 }
 
 .event-box h2 {
-    color: #ff70a6;
+    color: #bd4bff;
     margin-bottom: 1rem;
     font-size: 1.8rem;
 }
@@ -174,3 +176,125 @@ a[href*="discord.gg"]:hover {
         text-align: center;
     }
 }
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #ffffff10;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.about-section img {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 3px solid #7b1fa2;
+    background-color: #fff;
+    padding: 0.5rem;
+}
+
+.about-info {
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+}
+
+.about-info h2 {
+    font-size: 2rem;
+    color: #bd4bff;
+    margin-bottom: 1rem;
+}
+
+.about-info p {
+    font-size: 1.1rem;
+    color: #eee;
+    line-height: 1.7;
+}
+
+/* Responsive tweaks */
+@media (max-width: 700px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-info {
+        text-align: center;
+    }
+}
+
+p.not_nnfm {
+    font-size: 1.1rem;
+    color: #eee;
+    line-height: 1.5;
+    margin: 0; /* remove any default margin */
+}
+
+p.not_nnfm a.not_nnfm_link {
+    color: #65ff28;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: inherit;       /* same size as p */
+    line-height: inherit;     /* match line height */
+    margin: 0;                /* remove extra spacing */
+    padding: 0;
+    vertical-align: baseline; /* align with text baseline */
+    display: inline;          /* ensure inline behavior */
+    transition: color 0.3s ease;
+}
+
+p.not_nnfm a.not_nnfm_link:hover,
+p.not_nnfm a.not_nnfm_link:focus {
+    color: #9544ff;
+    text-decoration: none;
+    outline: none;
+}
+
+.pssst-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #2a2a2a;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.pssst-container h2 {
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.pssst-container p.not_nnfm {
+    margin: 0;
+    font-size: 1rem;
+    color: #eee;
+}
+
+.pssst-container a.not_nnfm_link {
+    color: #ff70a6;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    display: inline;
+    transition: color 0.3s ease;
+}
+
+.pssst-container a.not_nnfm_link:hover {
+    color: #ffffff;
+    text-decoration: none;
+} 
